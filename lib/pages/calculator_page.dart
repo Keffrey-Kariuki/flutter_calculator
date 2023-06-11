@@ -36,6 +36,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
 
           ContextModel cm = ContextModel();
           result = '${exp.evaluate(EvaluationType.REAL, cm)}';
+          equation = result;
         } catch(e) {
           result = "Error";
         }
